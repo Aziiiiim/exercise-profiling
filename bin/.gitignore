@@ -1,0 +1,52 @@
+HELP.md
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### Build & Compilation ###
+*.class
+target/
+build/
+
+### Maven Wrapper ###
+!.mvn/wrapper/maven-wrapper.jar
+
+### Spring Boot ###
+.springBeans
+.sts4-cache
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+com.zaxxer.hikari.pool/
+java.sql.*
+jdk.proxy3.*
+net.bytebuddy.description.type.*
+org.apache.catalina.loader.*
+org.hibernate.metamodel.mapping.*
+org.hibernate.persister.entity.*
+org.hibernate.sql.results.graph.*
+org.hibernate.type.descriptor.java.*
+org.jboss.logging.*
+org.postgresql.*
+org.springframework.*
