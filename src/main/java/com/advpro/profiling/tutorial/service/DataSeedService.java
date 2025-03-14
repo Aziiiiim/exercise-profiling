@@ -28,10 +28,12 @@ public class DataSeedService {
     @Autowired
     private StudentCourseRepository studentCourseRepository;
 
-    private static final int NUMBER_OF_STUDENTS = 20_000;
-    private static final int NUMBER_OF_COURSE = 10;
+    private static final int NUMBER_OF_STUDENTS = 1_000;
+    private static final int NUMBER_OF_COURSE = 5;
 
     public void seedStudent() {
+    	studentCourseRepository.deleteAll();
+    	studentRepository.deleteAll();
         Faker faker = new Faker(new Locale("in-ID"));
 
         for (int i = 0; i < NUMBER_OF_STUDENTS; i++) {
@@ -46,6 +48,8 @@ public class DataSeedService {
     }
 
     public void seedCourse() {
+    	studentCourseRepository.deleteAll();
+    	courseRepository.deleteAll();
         Faker faker = new Faker(new Locale("in-ID"));
         for (int i = 0; i < NUMBER_OF_COURSE; i++) {
             Course course = new Course();
@@ -58,6 +62,7 @@ public class DataSeedService {
     }
 
     public void seedStudentCourses() {
+    	studentCourseRepository.deleteAll();
         List<Student> students = studentRepository.findAll();
         List<Course> courses = courseRepository.findAll();
 
