@@ -41,6 +41,22 @@
 
 ### Analyse of the JMeter Tests results after optimization
 
+## 1️⃣ Endpoint: `/all-student`
+- **Before Optimization** : ![image](screenshots/test-1-viacommandline.png)
+- **After Optimization** : ![image](screenshots/test-1-viacommandline_after_optimization.png)
+
+---
+
+## 2️⃣ Endpoint: `/all-student-name`
+- **Before Optimization** : ![image](screenshots/test-2-viacommandline.png)
+- **After Optimization** : ![image](screenshots/test-2-viacommandline_after_optimization.png)
+
+---
+
+## 3️⃣ Endpoint: `/highest-gpa`
+- **Before Optimization** : ![image](screenshots/test-3-viacommandline.png)
+- **After Optimization** : ![image](screenshots/test-3-viacommandline_after_optimization.png)
+
 After optimizing the joinStudentNames() and findStudentWithHighestGpa() methods by reducing the use of findAll() and replacing it with more efficient queries, we conducted a new performance test using JMeter.
 
 - Response Time: We observed a significant reduction in execution time for both methods, indicating faster data retrieval.
