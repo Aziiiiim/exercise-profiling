@@ -37,3 +37,14 @@
 
 ## 3️⃣ Endpoint: `/highest-gpa`
 - **test_result_log3.jtL** : ![image](screenshots/test-3-viacommandline.png)
+
+
+### Analyse of the JMeter Tests results after optimization
+
+After optimizing the joinStudentNames() and findStudentWithHighestGpa() methods by reducing the use of findAll() and replacing it with more efficient queries, we conducted a new performance test using JMeter.
+
+- Response Time: We observed a significant reduction in execution time for both methods, indicating faster data retrieval.
+- Throughput: The number of requests handled per second increased, demonstrating improved efficiency.
+- Database Load: The optimized queries reduced the amount of data fetched, lowering the overall database workload.
+
+The optimizations have successfully improved the application's performance by reducing unnecessary data retrieval. Instead of loading all student records and processing them in memory, we now fetch only the necessary data directly from the database, making the application more efficient and scalable
