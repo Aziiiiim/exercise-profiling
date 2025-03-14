@@ -7,6 +7,8 @@ target/
 *.class
 target/
 build/
+bin/
+
 
 ### Maven Wrapper ###
 !.mvn/wrapper/maven-wrapper.jar
