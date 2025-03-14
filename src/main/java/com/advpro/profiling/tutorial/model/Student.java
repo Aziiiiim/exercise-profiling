@@ -1,5 +1,7 @@
 package com.advpro.profiling.tutorial.model;
 
+import java.util.List;
+
 import jakarta.persistence.*;
 
 /**
@@ -26,6 +28,9 @@ public class Student {
 
     @Column(name = "gpa", nullable = false)
     private Double gpa;
+    
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<StudentCourse> courses;
 
     // Constructors
 
@@ -79,6 +84,14 @@ public class Student {
 
     public void setGpa(Double gpa) {
         this.gpa = gpa;
+    }
+    
+    public List<StudentCourse> getStudentCourses() {
+        return courses;
+    }
+
+    public void setStudentCourses(List<StudentCourse> studentCourses) {
+        this.courses = studentCourses;
     }
 
     @Override
