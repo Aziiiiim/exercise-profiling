@@ -87,4 +87,4 @@ It provides detailed execution insights, helps visualize performance bottlenecks
 When profiling results differ from JMeter findings, I analyze different testing conditions, validate database interactions, and rerun tests to ensure accuracy.
 
 ### Optimization strategies and ensuring functionality:
-After analyzing test results, I focus on query optimization, algorithm improvements, and caching.
+After analyzing test results, I focus on query optimization, algorithm improvements, and caching. I ensure functionality remains intact by validating expected outputs by myself but indeed this time, no automated tests were run.
